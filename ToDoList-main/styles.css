@@ -1,0 +1,110 @@
+/*Grundseitenlayout*/
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed; /* Fixiert die Navbar am oberen Rand des Viewports */
+    width: 100%; /* Die Navbar erstreckt sich über die volle Breite */
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Stellt sicher, dass die Navbar über anderen Inhalten liegt */
+}
+
+header a {
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    font-family: Calibri;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+header a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/*ToDoList Eingabe*/
+.todo-container {
+    width: 300px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+input[type="text"] {
+    width: 92%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: dodgerblue;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color:lightskyblue;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+li.completed {
+    text-decoration: line-through;
+    color: #999;
+}
+
+/*Login und Registrierung*/
+.LoginLayout {
+    margin-top:100px;
+    margin-bottom:100px;
+    max-width: 400px;
+    max-height: 1500px;
+    margin: 50px auto;
+    background-color: white;
+    padding: 100px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    max-width:300px;
+    align-content:center;
+    margin-right:80px;
+    margin-bottom: 20px;
+}
+
+input, select {
+    width: 130%;
+    padding: 10px;
+    margin-top: 6px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
