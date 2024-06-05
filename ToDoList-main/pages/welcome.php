@@ -18,11 +18,6 @@
     />
 </head>
 <body>
-<header>
-    <?php
-        include '../nav/navbar.php';
-    ?>
-</header>
 <style>
     @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
 
