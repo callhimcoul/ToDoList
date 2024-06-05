@@ -38,15 +38,4 @@ class DatabaseAccess {
     }
 }
 
-// Verbindung mit tasksdb
-//Zur Erinnerung: user: tasksdbuser
-//Passwort: tasksdb123
-const dbConfig = {
-    host: 'localhost',
-    user: 'tasksdbuser',
-    password: 'tasksdb123',
-    database: 'tasksdb'
-};
-
-const db = new DatabaseAccess(dbConfig);
-db.createConnection();
+module.exports = DatabaseAccess;
