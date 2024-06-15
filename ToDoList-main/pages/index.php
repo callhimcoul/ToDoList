@@ -12,9 +12,7 @@
 <body class="dark-theme">
 
 <header>
-    <?php
-    include '../nav/navbar.php';
-    ?>
+    <?php include '../nav/navbar.php'; ?>
 </header>
 
 <div class="container mt-5">
@@ -29,8 +27,28 @@
         </div>
         <div class="col-md-8">
             <div class="todo-container">
-                <input type="text" id="new-task" placeholder="Add a new task..." class="form-control" />
-                <button class="btn btn-primary mt-2" onclick="addTask()">Add Task</button>
+                <h1>My Tasks</h1>
+                <div class="row g-2 align-items-end mb-3">
+                    <div class="col">
+                        <label for="new-task" class="form-label">Task Name</label>
+                        <input type="text" id="new-task" placeholder="Name of the task..." class="form-control" />
+                    </div>
+                    <div class="col">
+                        <label for="new-date" class="form-label">Task Date</label>
+                        <input type="date" id="new-date" class="form-control" />
+                    </div>
+                    <div class="col">
+                        <label for="new-category" class="form-label">Category</label>
+                        <select id="new-category" class="form-select">
+                            <option value="" disabled selected>Select category...</option>
+                            <option value="business">Business</option>
+                            <option value="private">Private</option>
+                        </select>
+                    </div>
+                    <div class="col-auto">
+                        <button class="btn btn-primary" onclick="addTask()">Add Task</button>
+                    </div>
+                </div>
                 <ul id="task-list" class="list-group mt-3"></ul>
             </div>
         </div>
@@ -38,19 +56,7 @@
 </div>
 
 <!-- Calendar Modal -->
-<div class="modal fade" id="calendarModal" tabindex="-1" aria-labelledby="calendarModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="calendarModalLabel">Calendar</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <div id="calendar"></div>
-            </div>
-        </div>
-    </div>
-</div>
+<?php include 'calender.php'; ?>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 <script src="../script/tasks.js"></script>
