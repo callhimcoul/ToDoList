@@ -6,7 +6,16 @@
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
             <li class="nav-item">
+                <a class="nav-link" href="../pages/index.php">My Tasks</a>
+            </li>
+            <li class="nav-item">
                 <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#calendarModal">Calendar</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../pages/registration.php">Registration</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../pages/login.php">Login</a>
             </li>
         </ul>
     </div>
