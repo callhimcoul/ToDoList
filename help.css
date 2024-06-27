@@ -1,0 +1,46 @@
+body.dark-theme {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+main {
+    padding: 80px 20px 20px 20px; /* Reduced top padding to account for fixed header */
+    margin: 20px auto 0 auto;
+    max-width: 800px;
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 1px solid #444;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+section h2 {
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+section p, section h3 {
+    color: #cccccc;
+    text-align: center; /* Center text alignment for paragraphs and subheadings */
+    padding: 0 20px;
+}
+
+h3 {
+    margin-top: 20px;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
